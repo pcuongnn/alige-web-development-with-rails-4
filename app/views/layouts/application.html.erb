@@ -9,12 +9,12 @@
 <body class='<%= controller.controller_name %>'>
 	<div id="banner">
 		<%= image_tag("logo.png") %>
-		<%= @page_title || "Pramatic Bookshelf"%>
+		<%= @page_title || "Pragmatic Bookshelf"%>
 	</div>
 	<div id="columns">
 		<div id="side">
 			<ul>
-				<li><a href="">Home</a></li>
+				<li><%= link_to "Home", store_index_path %></li>
 				<li><a href="">Question</a></li>
 				<li><a href="">New</a></li>
 				<li><a href="">Contact</a></li>
