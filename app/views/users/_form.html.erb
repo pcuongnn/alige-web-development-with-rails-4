@@ -1,0 +1,18 @@
+<div class="depot_form">
+	<fieldset>
+		<legend>Please enter your details</legend>
+		<%= simple_form_for(@user) do |f| %>
+		  <%= f.error_notification %>
+
+		  <div class="form-inputs">
+		    <%= f.input :name %>
+		    <%= f.input :password %>
+		    <%= f.input :password_confirmation%>
+		  </div>
+
+		  <div class="form-actions">
+		    <%= f.button :submit %>
+		  </div>
+		<% end %>		
+	</fieldset>
+</div>
